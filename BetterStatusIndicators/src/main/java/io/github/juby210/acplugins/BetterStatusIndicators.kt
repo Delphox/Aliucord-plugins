@@ -164,7 +164,7 @@ class BetterStatusIndicators : Plugin() {
                     }
                 }
 
-                clientStatuses.desktop?.let { desktopStatus ->
+/*                clientStatuses.desktop?.let { desktopStatus ->
                     desktopStatus.getDrawable(desktop)?.apply {
                         statusView.setImageDrawable(this)
                         return@Hook
@@ -173,7 +173,7 @@ class BetterStatusIndicators : Plugin() {
 
                 clientStatuses.web?.let { webStatus ->
                     webStatus.getDrawable(web)?.apply { statusView.setImageDrawable(this) }
-                }
+                }*/
             })
         else if (settings.getBool("filledColors", false))
             unpatchStatusView = patcher.patch(m, Hook {
